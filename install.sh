@@ -175,3 +175,6 @@ echo "  bash-it show plugins"
 echo ""
 echo "To avoid issues and to keep your shell lean, please enable only features you really want to use."
 echo "Enabling everything can lead to issues."
+
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+git config --global core.editor "vim"

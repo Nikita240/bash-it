@@ -58,6 +58,9 @@ scm_prompt() {
 # non-printable bytes in PS1 need to be contained within \[ \].
 # Otherwise, bash will count them in the length of the prompt
 function set_custom_colors() {
+  
+  normal="\[\e[0m\]\[$(tput setaf 248)\]"
+
   dark_grey="\[$(tput setaf 8)\]"
   light_grey="\[$(tput setaf 248)\]"
 
